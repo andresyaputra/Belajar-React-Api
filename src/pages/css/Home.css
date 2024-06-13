@@ -1,0 +1,97 @@
+/* src/components/css/Home.css */
+
+/* Slider styles */
+.slider {
+  position: relative;
+  background-color: #000;
+}
+
+.slider img {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider img.translate-x-0 {
+  opacity: 1;
+}
+
+.slider img.translate-x-full {
+  opacity: 0;
+}
+
+.slider button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots .dot.bg-gray-500 {
+  background-color: #aaa;
+}
+
+/* Recommended products styles */
+.recommended-products-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.recommended-products-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.recommended-product {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.recommended-product .product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.recommended-product .product-name {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.recommended-product .product-price {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #333;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 9999;
+}

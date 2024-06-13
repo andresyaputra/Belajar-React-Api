@@ -1,0 +1,123 @@
+/* src/components/css/Navbar.css */
+
+/* Marquee styles */
+.marquee {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee p {
+  display: inline-block;
+  padding: 10px 0;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-logo {
+  height: 50px;
+}
+
+.navbar-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+.navbar-search-icon {
+  position: absolute;
+  right: 10px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.navbar-cart {
+  color: #000000;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-button {
+  background: none;
+  border: none;
+  color: #040404;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.navbar-login {
+  color: #010101;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
